@@ -1,9 +1,11 @@
 import React from "react";
-
+import CardList from "./../components/CardList";
+import dummyData from "./../data";
 const Cars = () => {
+  const list = dummyData;
   return (
     <div>
-      <h1>Cars</h1>
+      <CardList list={list} />
     </div>
   );
 };

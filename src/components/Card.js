@@ -1,24 +1,16 @@
 import React from "react";
-import { Link } from "react-router-dom";
-const Card = ({ item, channel }) => {
+const Card = ({ item }) => {
+  console.log(item);
   return (
     <li className="card">
-      <a
-        href={`https://www.youtube.com/watch?v=${item.id}`}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="card-link"
-      >
-        <img src={item.image} alt={item.title} className="card-image" />
-        <img src={item.image} alt={item.title} className="channel-image" />
-        <h4 className="card-title">{item.title}</h4>
-        <p className="card-channel">
-          <i>{channel}</i>
-        </p>
-        <div className="card-metrics">
-          {item.views} &bull; {item.published}
-        </div>
-      </a>
+      <img src={item.items[0].image} alt={item.title} className="card-image" />
+      <h4 className="card-title">{item.section}</h4>
+      <p className="card-channel">
+        <i>{item.channel}</i>
+      </p>
+      <div className="card-metrics">
+        {item.views} &bull; {item.published}
+      </div>
     </li>
   );
 };
