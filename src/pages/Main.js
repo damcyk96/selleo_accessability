@@ -9,7 +9,6 @@ const Main = () => {
   return (
     <div>
       <NavBar />
-      <h1>dupa</h1>
       <Routes>
         <Route path="/" element={<Bikes />} />
         <Route path="/bikes" element={<Bikes />} />

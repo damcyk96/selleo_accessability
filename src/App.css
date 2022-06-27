@@ -4,6 +4,10 @@
   font-size: 16px;
 }
 
+li {
+  list-style: none;
+}
+
 .list {
   display: flex;
   justify-content: space-between;
@@ -16,8 +20,13 @@
   margin-top: 30px;
 }
 
+ul {
+  flex-wrap: wrap;
+  display: flex;
+}
+
 .card {
-  width: calc(33% - 10px);
+  width: 50%;
   margin: 20px 0;
 }
 .card-link {

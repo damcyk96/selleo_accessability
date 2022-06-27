@@ -38,6 +38,7 @@ const Toggle = ({ theme, toggleTheme }) => {
           width="24"
           height="24"
           viewBox="0 0 24 24"
+          alt="moon"
         >
           <path
             style={{ fill: "#F6C358" }}
@@ -50,6 +51,7 @@ const Toggle = ({ theme, toggleTheme }) => {
           width="24"
           height="24"
           viewBox="0 0 24 24"
+          alt="Sun"
         >
           <path
             style={{ fill: "#F6C358" }}

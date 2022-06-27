@@ -12,7 +12,7 @@ if (process.env.NODE_ENV !== "production") {
     violations.forEach(({ nodes = [] }) => {
       nodes.forEach(({ target }) => {
         const node = document.querySelector(target);
-        node.style.border = "2px dotted yellow";
+        node.style.border = "2px dotted blue";
         node.style["box-sizing"] = "border-box";
       });
     });
