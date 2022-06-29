@@ -31,7 +31,7 @@ const Moon = styled.svg`
 
 const Toggle = ({ theme, toggleTheme }) => {
   return (
-    <Button onClick={toggleTheme} aria-label="button">
+    <Button onClick={toggleTheme} aria-label="switch contrast">
       {theme === "light" ? (
         <Moon
           xmlns="http://www.w3.org/2000/svg"
