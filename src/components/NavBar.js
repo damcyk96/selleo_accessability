@@ -19,9 +19,15 @@ const CustomLink = styled(Link)`
 const NavBar = () => {
   return (
     <Navigation>
-      <CustomLink to="/bikes">Bikes</CustomLink>
-      <CustomLink to="/cars">Cars</CustomLink>
-      <CustomLink to="/dolls">Dolls</CustomLink>
+      <CustomLink aria-label="bikes" role="link" to="/bikes">
+        Bikes
+      </CustomLink>
+      <CustomLink aria-label="cars" role="link" to="/cars">
+        Cars
+      </CustomLink>
+      <CustomLink aria-label="dolls" to="/dolls">
+        Dolls
+      </CustomLink>
     </Navigation>
   );
 };
